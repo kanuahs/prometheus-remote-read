@@ -1,0 +1,39 @@
+# This file provisions datasources when grafana is starting.
+apiVersion: 1
+
+datasources:
+  - name: accumulator
+    type: prometheus
+    access: proxy
+    orgId: 1
+    url: http://accumulator:9090
+    isDefault:
+    version: 1
+    editable: true
+
+  - name: prometheus1
+    type: prometheus
+    access: proxy
+    orgId: 1
+    url: http://prometheus1:9090
+    isDefault:
+    version: 1
+    editable: true
+
+  - name: prometheus2
+    type: prometheus
+    access: proxy
+    orgId: 1
+    url: http://prometheus2:9090
+    isDefault:
+    version: 1
+    editable: true
+
+  - name: prometheus3
+    type: prometheus
+    access: proxy
+    orgId: 1
+    url: http://prometheus3:9090
+    isDefault:
+    version: 1
+    editable: true
